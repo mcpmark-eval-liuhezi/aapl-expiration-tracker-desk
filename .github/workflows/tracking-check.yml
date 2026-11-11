@@ -1,0 +1,11 @@
+name: Manual Tracking Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo-status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo tracking status
+        run: echo "AAPL expiration tracker workflow dispatched manually. Current share price reference: $355.63 (Yahoo Finance). Tracking repo: mcpmark-eval-liuhezi/aapl-expiration-tracker-desk"
